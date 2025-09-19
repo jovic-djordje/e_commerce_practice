@@ -1,4 +1,5 @@
 import { SlBasket } from "react-icons/sl";
+import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import "./nav.style.css";
 
@@ -24,7 +25,10 @@ const Navigation = () => {
             Kontakt
           </Link>
         </div>
-        <SlBasket className="nav-icon" />
+        <div className="ham-holder">
+          <SlBasket className="nav-icon" />
+          <RxHamburgerMenu className="ham-menu-btn" />
+        </div>
       </div>
     </div>
   );
