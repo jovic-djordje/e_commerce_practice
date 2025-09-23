@@ -23,7 +23,7 @@ const SectionTwo = () => {
   ];
   return (
     <div className="section-two">
-      <div className="section-two-holder">
+      <div className="section-holder section-two-holder">
         <div className="section-two-text-holder">
           <h2 className="section-two-title">
             Beautiful presentations made easy.

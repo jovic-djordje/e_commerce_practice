@@ -21,7 +21,7 @@ const SectionOne = () => {
 
   return (
     <div className="section">
-      <div className="section-one-holder">
+      <div className="section-holder section-one-holder">
         <div className="section-one-text-holder">
           <h1 className="section-one-title">Fresh beautiful innovative.</h1>
           <span className="line"></span>

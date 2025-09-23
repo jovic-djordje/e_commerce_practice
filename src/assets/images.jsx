@@ -5,6 +5,7 @@ import sectionOneLogo3 from "./section-one-logo (3).png";
 import sectionOneLogo4 from "./section-one-logo (4).png";
 import sectionOneLogo5 from "./section-one-logo (5).png";
 import sectionOneLogo6 from "./section-one-logo (6).png";
+import sectionThreeImg from "./headphonesWhite.png";
 
 const SectionOneImg = ({ className }) => {
   return <img src={sectionOneImg} alt="illustration" className={className} />;
@@ -34,6 +35,10 @@ const SectionOneLogo6 = ({ className }) => {
   return <img src={sectionOneLogo6} alt="illustration" className={className} />;
 };
 
+const SectionThreeImg = ({ className }) => {
+  return <img src={sectionThreeImg} alt="illustration" className={className} />;
+};
+
 export {
   SectionOneImg,
   SectionOneLogo,
@@ -42,4 +47,5 @@ export {
   SectionOneLogo4,
   SectionOneLogo5,
   SectionOneLogo6,
+  SectionThreeImg,
 };
