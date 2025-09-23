@@ -1,4 +1,5 @@
 import SectionOne from "./components/SectionOne";
+import SectionThree from "./components/SectionThree";
 import SectionTwo from "./components/SectionTwo";
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
     <div>
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </div>
   );
 };
