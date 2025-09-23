@@ -91,6 +91,84 @@
     hue-rotate(304deg) brightness(97%) contrast(103%);
 }
 
+/* SECTION TWO */
+.section-two {
+  background-color: #fff;
+  padding: 60px 0px;
+}
+
+.section-two-holder {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-two-text-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  max-width: 900px;
+  width: 100%;
+}
+
+.section-two-title {
+  color: #2d3436;
+  font-family: "Bree Serif";
+  font-size: 35px;
+}
+
+.section-two-text {
+  color: #2d3436;
+  font-family: "Bricolage Grotesque";
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.section-two-cart-holder {
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.sec-two-cart {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+.section-two-icon {
+  width: 40px;
+  height: 40px;
+  filter: brightness(0) saturate(100%) invert(36%) sepia(29%) saturate(3690%)
+    hue-rotate(339deg) brightness(97%) contrast(87%);
+}
+
+.sec-two-cart-tt {
+  color: #2d3436;
+  font-family: "Bree Serif";
+  text-transform: uppercase;
+}
+
+.sec-two-cart-txt {
+  color: #2d3436;
+  font-family: "Bricolage Grotesque";
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .section-one-holder {
@@ -107,6 +185,10 @@
 
   .section-one-img {
     max-width: 500px;
+  }
+
+  .section-two-holder {
+    width: 95%;
   }
 }
 
@@ -125,6 +207,22 @@
   }
 
   .section-one-text {
+    font-size: 15px;
+  }
+
+  .section-two-text-holder {
+    max-width: 700px;
+  }
+
+  .section-two-title {
+    font-size: 30px;
+  }
+
+  .section-two-text {
+    font-size: 15px;
+  }
+
+  .sec-two-cart-txt {
     font-size: 15px;
   }
 }
@@ -155,10 +253,36 @@
     justify-content: center;
     justify-items: center;
   }
+
+  .section-two-text-holder {
+    max-width: 600px;
+  }
+
+  .sec-two-cart-txt {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .section-two-cart-holder {
+    flex-direction: column;
+  }
+
+  .sec-two-cart {
+    max-width: 450px;
+  }
 }
 
 @media screen and (max-width: 520px) {
   .section-one-img {
     width: 91%;
+  }
+
+  .section-two-title {
+    font-size: 25px;
+  }
+
+  .section-two-text {
+    font-size: 14px;
   }
 }
