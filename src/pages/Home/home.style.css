@@ -344,6 +344,116 @@
   top: -110px;
 }
 
+/* SECTION FIVE */
+
+.section-five {
+  padding: 50px 0px;
+  background-color: #fff;
+}
+
+.section-five-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.product-info-holder {
+  background-color: #2d3436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 90px 0px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.product-info-title {
+  font-family: "Bree Serif";
+  font-size: 26px;
+}
+
+.product-info-mail-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.product-info-mail-holder input {
+  padding: 6px 0px;
+  max-width: 250px;
+  width: 100%;
+  border: 2px solid #fff;
+  background: transparent;
+  text-indent: 10px;
+  color: #fff;
+  font-family: "Bricolage Grotesque";
+  border-radius: 5px;
+}
+
+.product-info-mail-holder input::placeholder {
+  color: #fff;
+  text-indent: 10px;
+}
+
+.product-info-mail-holder button {
+  max-width: 250px;
+  width: 100%;
+  background-color: #e74c3c;
+  border: none;
+  color: #fff;
+  font-family: "Bricolage Grotesque";
+  text-transform: capitalize;
+  padding: 8px 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.feature-holder {
+  color: #2d3436;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+  font-family: "Bricolage Grotesque";
+}
+
+.feat-title {
+  font-family: "Bree Serif";
+  font-size: 26px;
+}
+
+.feat-text {
+  max-width: 900px;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.checklist-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  font-weight: bold;
+}
+
+.check-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .logo-holder {
@@ -403,6 +513,14 @@
 
   .sec-three-img {
     max-width: 400px;
+  }
+
+  .feat-text {
+    font-size: 15px;
+  }
+
+  .check-text {
+    font-size: 14px;
   }
 }
 
@@ -467,6 +585,18 @@
   .sec-four-cart {
     max-width: 800px;
   }
+
+  .product-info-mail-holder {
+    flex-direction: column;
+  }
+
+  .checklist-holder {
+    flex-direction: column;
+    gap: 0;
+    max-width: 800px;
+    width: 100%;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -490,5 +620,9 @@
 
   .section-two-text {
     font-size: 14px;
+  }
+
+  .check-text {
+    font-size: 12px;
   }
 }
