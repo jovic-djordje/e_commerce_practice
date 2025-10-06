@@ -519,6 +519,36 @@
   font-weight: bold;
 }
 
+/* SECTION SEVEN */
+.section-seven {
+  padding: 60px 0px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 0px;
+}
+
+.section-seven-holder {
+  background-color: #e74c3c;
+  padding: 20px 0px;
+  border-radius: 10px;
+}
+
+.section-seven-width-holder {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-seven-copy {
+  color: #2d3436;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .logo-holder {
@@ -603,6 +633,12 @@
 
 @media screen and (max-width: 800px) {
   .section-one-holder {
+    flex-direction: column;
+    padding: 30px 0px;
+    gap: 50px;
+  }
+
+  .section-seven-width-holder {
     flex-direction: column;
     padding: 30px 0px;
     gap: 50px;
