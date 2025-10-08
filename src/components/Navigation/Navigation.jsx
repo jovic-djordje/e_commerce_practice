@@ -10,19 +10,19 @@ const Navigation = () => {
         <p className="logo">E-commerce</p>
         <div className="nav-links">
           <Link to="/" className="nav-item">
-            Pocetna
+            Home
           </Link>
           <Link to="/offer" className="nav-item">
-            Ponuda
+            Offer
           </Link>
           <Link to="/order" className="nav-item">
-            Kako naruciti?
+            How to Order?
           </Link>
           <Link to="/about" className="nav-item">
-            O nama
+            About Us
           </Link>
           <Link to="/contact" className="nav-item">
-            Kontakt
+            Contact
           </Link>
         </div>
         <div className="ham-holder">

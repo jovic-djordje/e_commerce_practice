@@ -9,6 +9,9 @@ import sectionThreeImg from "./headphonesWhite.png";
 import sectionSixClient from "./client.png";
 import sectionSixClientTwo from "./client (2).png";
 import sectionSixClientThree from "./client (3).png";
+import aboutPageImg from "./about-page-img.png";
+import aboutPageImgTwo from "./about-page-img (2).png";
+import aboutPageImgThree from "./about-page-img (3).png";
 
 const SectionOneImg = ({ className }) => {
   return <img src={sectionOneImg} alt="illustration" className={className} />;
@@ -60,6 +63,20 @@ const SectionSixClientThree = ({ className }) => {
   );
 };
 
+const AboutPageImg = ({ className }) => {
+  return <img src={aboutPageImg} alt="illustration" className={className} />;
+};
+
+const AboutPageImgTwo = ({ className }) => {
+  return <img src={aboutPageImgTwo} alt="illustration" className={className} />;
+};
+
+const AboutPageImgThree = ({ className }) => {
+  return (
+    <img src={aboutPageImgThree} alt="illustration" className={className} />
+  );
+};
+
 export {
   SectionOneImg,
   SectionOneLogo,
@@ -72,4 +89,7 @@ export {
   SectionSixClient,
   SectionSixClientTwo,
   SectionSixClientThree,
+  AboutPageImg,
+  AboutPageImgTwo,
+  AboutPageImgThree,
 };
