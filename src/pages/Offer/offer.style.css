@@ -1,0 +1,108 @@
+.offer-section {
+  padding: 60px 0px;
+  background-color: #e74c3c;
+  font-family: "Bricolage Grotesque";
+}
+
+.offer-section-holder {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+}
+
+.offer-cart {
+  width: 100%;
+}
+
+.offer-cart {
+  background-color: #c0392b;
+  padding: 16px 0px;
+  border-radius: 8px;
+}
+
+.offer-cart-width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  margin: 0px auto;
+}
+
+.headphones-icon-holder {
+  align-self: flex-end;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #e74c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.offer-img {
+  max-width: 150px;
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.details-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.offer-cart-btn {
+  padding: 8px 0px;
+  max-width: 120px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .offer-section-holder {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .offer-cart-des {
+    font-size: 15px;
+  }
+
+  .details-holder {
+    font-size: 15px;
+  }
+
+  .offer-section-holder {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .offer-cart {
+    padding: 24px 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .offer-section-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .offer-section-holder {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
