@@ -1,4 +1,5 @@
 import { OfferImgOne, OfferImgThree, OfferImgTwo } from "../../assets/images";
+import { Link } from "react-router-dom";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import "./cart.style.css";
 const Cart = () => {
@@ -70,7 +71,10 @@ const Cart = () => {
             <p>Total</p>
             <span className="total-price">$369.00</span>
           </div>
-          <button className="cart-btn">Proceed to checkout</button>
+          <Link to="/checkout" className="cart-btn-link">
+            {" "}
+            <button className="cart-btn">Proceed to checkout</button>
+          </Link>
           <button className="cart-btn">Continue shopping</button>
         </div>
       </div>
