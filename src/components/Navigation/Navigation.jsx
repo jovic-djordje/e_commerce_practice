@@ -26,7 +26,9 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="ham-holder">
-          <SlBasket className="nav-icon" />
+          <Link to="/cart">
+            <SlBasket className="nav-icon" />
+          </Link>
           <RxHamburgerMenu className="ham-menu-btn" />
         </div>
       </div>
