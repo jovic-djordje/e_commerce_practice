@@ -1,0 +1,154 @@
+.checkout-section {
+  padding: 60px 0px;
+  background-color: #e74c3c;
+  font-family: "Bricolage Grotesque";
+}
+
+.checkout-section-holder {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 750px;
+}
+
+.delivery-address {
+  color: #fff;
+  background-color: #2d3436;
+  max-width: 750px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 16px 16px 0px 0px;
+}
+
+.delivery-address-width {
+  width: 95%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.delivery-address input {
+  width: 100%;
+  padding: 8px 0px;
+  text-indent: 10px;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2d3436;
+}
+
+.delivery-address::placeholder {
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.delivery-address a {
+  color: #e74c3c;
+}
+
+.delivery-title {
+  font-family: "Bree Serif";
+}
+
+.customer-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.city-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+#state {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 0px;
+  font-family: inherit;
+}
+
+.city-details input {
+  width: 100%;
+}
+
+.check-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+#checkbox {
+  width: 16px;
+  height: 16px;
+}
+
+.contact-info-input {
+  color: #fff;
+  background-color: #2d3436;
+  max-width: 750px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 0px 0px 16px 16px;
+}
+
+.contact-info-title {
+  font-family: "Bree Serif";
+}
+
+.contact-info-input input {
+  width: 100%;
+  padding: 8px 0px;
+  text-indent: 10px;
+  font-family: inherit;
+  border: none;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #2d3436;
+}
+
+.contact-info-input::placeholder {
+  color: #2d3436;
+  font-weight: 600;
+}
+
+.customer-contact-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.contact-text {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.checkout-btn {
+  padding: 8px 0px;
+  align-self: flex-end;
+  border-radius: 4px;
+  border: none;
+  font-family: inherit;
+  max-width: 250px;
+  width: 100%;
+  cursor: pointer;
+}

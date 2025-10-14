@@ -20,7 +20,7 @@
 }
 
 .offer-cart {
-  background-color: #c0392b;
+  background-color: #f2f2f2;
   padding: 16px 0px;
   border-radius: 8px;
 }
@@ -54,11 +54,17 @@
   object-fit: contain;
 }
 
+.offer-cart-des {
+  color: #2d3436;
+}
+
 .details-holder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  font-family: "Bree Serif";
+  color: #e74c3c;
 }
 
 .offer-cart-btn {
@@ -69,6 +75,8 @@
   border: none;
   font-family: inherit;
   cursor: pointer;
+  background-color: #e74c3c;
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {
