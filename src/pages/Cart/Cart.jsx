@@ -2,32 +2,19 @@ import { OfferImgOne, OfferImgThree, OfferImgTwo } from "../../assets/images";
 import { Link } from "react-router-dom";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import "./cart.style.css";
+import { useEffect, useState } from "react";
+import { getAllItems } from "../../components/data/itemsData";
 const Cart = () => {
-  const items = [
-    {
-      icon: <RiDeleteBin6Line className="cart-items-icon" />,
+  const [items, setItems] = useState([]);
 
-      image: <OfferImgOne className="cart-img" />,
-      text: "Item 1",
-      price: "$122.00",
-      description: "Simple design high quality sound",
-    },
-    {
-      icon: <RiDeleteBin6Line className="cart-items-icon" />,
+  useEffect(() => {
+    // const allItems = getAllItems();
+    // console.log(allItems);
+    getAllItems().then((result) => {
+      setItems(result.slice(0, 3));
+    });
+  }, []);
 
-      image: <OfferImgTwo className="cart-img" />,
-      text: "Item 2",
-      price: "$123.00",
-      description: "Simple design high quality sound",
-    },
-    {
-      icon: <RiDeleteBin6Line className="cart-items-icon" />,
-      image: <OfferImgThree className="cart-img" />,
-      text: "Item 3",
-      price: "$124.00",
-      description: "Simple design high quality sound",
-    },
-  ];
   return (
     <div className="cart-section">
       <div className="cart-holder">
@@ -36,14 +23,14 @@ const Cart = () => {
           <div className="cart-items-holder">
             {items.map((item) => (
               <div className="item-detail">
-                {item.image}
+                <img src={item.image} alt="illustration" className="cart-img" />
                 <div className="item-text">
-                  <span>{item.text}</span>
+                  <span>{item.name}</span>
                   <p>{item.description}</p>
                 </div>
                 <input type="number" min="1" max="10"></input>
-                <span className="item-price">{item.price}</span>
-                {item.icon}
+                <span className="item-price">${item.price}</span>
+                <RiDeleteBin6Line className="cart-items-icon" />
               </div>
             ))}
           </div>
