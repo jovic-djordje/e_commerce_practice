@@ -34,6 +34,11 @@ import offerImgNineteen from "./headphones19.webp";
 import offerImgTwenty from "./headphones20.webp";
 import offerImgTwentyOne from "./headphonesBlack.png";
 import offerImgTwentyTwo from "./headphonesWhite.png";
+import orderHeroImage from "./order-hero-img.png";
+import orderProcessOne from "./order-process-img.png";
+import orderProcessTwo from "./order-process-img (2).png";
+import orderProcessThree from "./order-process-img (3).png";
+import orderProcessFour from "./order-process-img (4).png";
 
 const SectionOneImg = ({ className }) => {
   return <img src={sectionOneImg} alt="illustration" className={className} />;
@@ -201,6 +206,30 @@ const OfferImgTwentyTwo = ({ className }) => {
   );
 };
 
+const OrderHeroImage = ({ className }) => {
+  return <img src={orderHeroImage} alt="illustartion" className={className} />;
+};
+
+const OrderProcessOne = ({ className }) => {
+  return <img src={orderProcessOne} alt="illustration" className={className} />;
+};
+
+const OrderProcessTwo = ({ className }) => {
+  return <img src={orderProcessTwo} alt="illustration" className={className} />;
+};
+
+const OrderProcessThree = ({ className }) => {
+  return (
+    <img src={orderProcessThree} alt="illustration" className={className} />
+  );
+};
+
+const OrderProcessFour = ({ className }) => {
+  return (
+    <img src={orderProcessFour} alt="illustration" className={className} />
+  );
+};
+
 export {
   SectionOneImg,
   SectionOneLogo,
@@ -238,4 +267,9 @@ export {
   OfferImgTwenty,
   OfferImgTwentyOne,
   OfferImgTwentyTwo,
+  OrderHeroImage,
+  OrderProcessOne,
+  OrderProcessTwo,
+  OrderProcessThree,
+  OrderProcessFour,
 };
