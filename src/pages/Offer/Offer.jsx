@@ -26,10 +26,11 @@ import {
 import "./offer.style.css";
 import { useEffect, useState } from "react";
 import { getAllItems } from "../../components/data/itemsData";
+import { useOrderStore } from "../../store/order/order.store";
 
 const Offer = () => {
   const [items, setItems] = useState([]);
-
+  const { addItemToCart } = useOrderStore();
   useEffect(() => {
     // const allItems = getAllItems();
     // console.log(allItems);
@@ -59,7 +60,12 @@ const Offer = () => {
                 <span className="offer-cart-price">${headphone.price}</span>
               </div>
               <p className="offer-cart-des">{headphone.description}</p>
-              <button className="offer-cart-btn">Add to Cart</button>
+              <button
+                className="offer-cart-btn"
+                onClick={() => addItemToCart(headphone)}
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         ))}
