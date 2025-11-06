@@ -40,6 +40,8 @@
   border: none;
   font-family: inherit;
   cursor: pointer;
+  background-color: #2d3436;
+  color: #fff;
 }
 
 .order-btn-link {
@@ -195,4 +197,6 @@
   border: none;
   font-family: inherit;
   cursor: pointer;
+  color: #fff;
+  background-color: #2d3436;
 }
