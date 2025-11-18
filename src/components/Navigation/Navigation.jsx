@@ -1,9 +1,13 @@
 import { SlBasket } from "react-icons/sl";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+
 import "./nav.style.css";
+import { useOrderStore } from "../../store/order/order.store";
 
 const Navigation = () => {
+  const { orders } = useOrderStore();
+
   return (
     <div className="navigation">
       <div className="navigation-holder">
@@ -26,8 +30,11 @@ const Navigation = () => {
           </Link>
         </div>
         <div className="ham-holder">
-          <Link to="/cart">
+          <Link to="/cart" style={{ position: "relative" }}>
             <SlBasket className="nav-icon" />
+            {orders.length == 0 ? null : (
+              <span className="basket-count">{orders.length}</span>
+            )}
           </Link>
           <RxHamburgerMenu className="ham-menu-btn" />
         </div>
