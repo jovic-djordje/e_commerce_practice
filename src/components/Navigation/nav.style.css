@@ -40,6 +40,21 @@
   justify-content: center;
   align-items: center;
   gap: 18px;
+  position: relative;
+}
+
+.basket-count {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  background-color: #000;
+  top: -10px;
+  left: 20px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-icon {
