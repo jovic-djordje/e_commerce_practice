@@ -1,4 +1,4 @@
-import "./Checkout.style.css";
+import "./checkout.style.css";
 const Checkout = () => {
   return (
     <div className="checkout-section">
