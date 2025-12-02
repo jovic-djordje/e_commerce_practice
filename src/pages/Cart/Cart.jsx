@@ -17,7 +17,8 @@ const Cart = () => {
   const [promoInput, setPromoInput] = useState("");
   const [appliedCoupon, setAppliedCoupon] = useState(null);
   const [isError, setIsError] = useState(false);
-  const { orders, removeFromCart, removeAllItems } = useOrderStore();
+  const { orders, removeFromCart, removeAllItems, updateQuantity } =
+    useOrderStore();
   console.log(orders, "all orders");
 
   {
@@ -45,7 +46,10 @@ const Cart = () => {
     setErrorMessage("");
   };
 
-  let subTotal = orders.reduce((sum, orderItem) => sum + orderItem.price, 0);
+  let subTotal = orders.reduce(
+    (sum, orderItem) => sum + orderItem.price * orderItem.quantity,
+    0
+  );
   console.log(subTotal, "sub tital calculation");
   let discount = appliedCoupon ? (subTotal * appliedCoupon.amount) / 100 : 0;
   const total = Math.max(0, subTotal - discount);
@@ -81,8 +85,18 @@ const Cart = () => {
                   <span>{item.name}</span>
                   <p>{item.description}</p>
                 </div>
-                <input type="number" min="1" max="10"></input>
-                <span className="item-price">${item.price.toFixed(2)}</span>
+                <input
+                  type="number"
+                  min="1"
+                  max="10"
+                  onChange={(e) =>
+                    updateQuantity(item.id, Number(e.target.value))
+                  }
+                ></input>
+                <span className="item-price">
+                  {" "}
+                  ${(item.price * item.quantity).toFixed(2)}
+                </span>
                 <RiDeleteBin6Line
                   className="cart-items-icon"
                   onClick={() => removeFromCart(item.id)}

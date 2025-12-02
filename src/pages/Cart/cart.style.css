@@ -72,6 +72,9 @@
   padding: 4px 0px;
   border: none;
   text-indent: 20px;
+  max-width: 50px;
+  width: 100%;
+  min-height: 20pxgit;
 }
 
 .item-text {
